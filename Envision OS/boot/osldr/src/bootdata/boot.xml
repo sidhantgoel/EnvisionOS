@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<boot>
+  <menu>
+    <mode>1024x768x32</mode>
+    <timeout>20</timeout>
+  </menu>
+  <choices>
+    <entry>
+      <name>Envision OS</name>
+      <type>system</type>
+      <path>\ATA0\DISK0\PART0\SYSTEM</path>
+      <options></options>
+    </entry>
+    <entry>
+      <name>Boot Sector Test</name>
+      <type>bootsect</type>
+      <path>\ATA0\DISK0\PART0\fat32.bin</path>
+    </entry>
+  </choices>
+</boot>

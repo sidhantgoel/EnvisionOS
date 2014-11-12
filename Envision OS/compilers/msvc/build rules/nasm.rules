@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VisualStudioToolFile
+	Name="Netwide Assembler"
+	Version="8.00"
+	>
+	<Rules>
+		<CustomBuildRule
+			Name="NASM"
+			DisplayName="Netwide Assembler"
+			CommandLine="&quot;[$NasmPath]\nasmw.exe&quot; [AllOptions] [inputs]"
+			Outputs="[$ObjectFileName]"
+			FileExtensions="*.asm"
+			ExecutionDescription="Assembling..."
+			>
+			<Properties>
+				<StringProperty
+					Name="ObjectFileName"
+					DisplayName="Output File Name"
+					PropertyPageName="Output File"
+					Description="Specifies the name of output file"
+					Switch="-o &quot;[value]&quot;"
+					DefaultValue="$(OutDir)\$(InputName).bin"
+				/>
+				<EnumProperty
+					Name="ObjectFormat"
+					DisplayName="Output File Format"
+					PropertyPageName="Output File"
+					Description="Specifies the format of output file"
+					>
+					<Values>
+						<EnumValue
+							Value="0"
+							Switch="-f bin"
+							DisplayName="Flat Binary"
+						/>
+						<EnumValue
+							Value="1"
+							Switch="-f aout"
+							DisplayName="aout"
+						/>
+						<EnumValue
+							Value="2"
+							Switch="-f aoutb"
+							DisplayName="aoutb"
+						/>
+						<EnumValue
+							Value="3"
+							Switch="-f coff"
+							DisplayName="coff"
+						/>
+						<EnumValue
+							Value="4"
+							Switch="-f elf"
+							DisplayName="elf"
+						/>
+						<EnumValue
+							Value="5"
+							Switch="-f as86"
+							DisplayName="as86"
+						/>
+						<EnumValue
+							Value="6"
+							Switch="-f obj"
+							DisplayName="obj"
+						/>
+						<EnumValue
+							Value="7"
+							Switch="-f win32"
+							DisplayName="win32"
+						/>
+						<EnumValue
+							Value="8"
+							Switch="-f rdf"
+							DisplayName="rdf"
+						/>
+						<EnumValue
+							Value="9"
+							Switch="-f ieee"
+							DisplayName="ieee"
+						/>
+					</Values>
+				</EnumProperty>
+				<StringProperty
+					Name="PreprocessorDefinitions"
+					DisplayName="Preprocessor Definitions"
+					Description="Define a text macro with the given value"
+					Switch="-D &quot;[value]&quot;"
+					Delimited="true"
+					Inheritable="true"
+				/>
+				<StringProperty
+					Name="IncludePaths"
+					DisplayName="Include Paths"
+					Description="Sets Path for include file."
+					Switch="-I &quot;[value]&quot;"
+					Delimited="true"
+					Inheritable="true"
+				/>
+				<StringProperty
+					Name="AssemblyCodeListingFile"
+					DisplayName="Assembly Code Listing File"
+					PropertyPageName="Listing File"
+					Description="Genrates an assembly code listing file."
+					Switch="-l &quot;[value]&quot;"
+				/>
+				<StringProperty
+					Name="NasmPath"
+					DisplayName="NASM Path"
+					Description="Netwide Assembler Path Installation Path"
+					DefaultValue="C:\Documents and Settings\Administrator\My Documents\Envision OS\bin"
+					Delimited="true"
+					Inheritable="true"
+				/>
+			</Properties>
+		</CustomBuildRule>
+	</Rules>
+</VisualStudioToolFile>

@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OS Loader", "boot\osldr\osldr.vcproj", "{E32EDFFD-8AAB-4BCF-A1C9-E94F43142D43}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DDDBAF15-4F75-481D-8381-28FB9C7AE12E} = {DDDBAF15-4F75-481D-8381-28FB9C7AE12E}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Boot Sectors", "boot\bootsect\bootsect.vcproj", "{469FF306-CC5F-4F43-8951-C025D7653D3A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Kernel Runtime", "kernel runtime library\kernel runtime.vcproj", "{DDDBAF15-4F75-481D-8381-28FB9C7AE12E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Envision Kernel", "kernel\Envision Kernel.vcproj", "{37CAF235-3A93-454A-83E0-F0767FB763A1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DDDBAF15-4F75-481D-8381-28FB9C7AE12E} = {DDDBAF15-4F75-481D-8381-28FB9C7AE12E}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E32EDFFD-8AAB-4BCF-A1C9-E94F43142D43}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E32EDFFD-8AAB-4BCF-A1C9-E94F43142D43}.Debug|Win32.Build.0 = Debug|Win32
+		{E32EDFFD-8AAB-4BCF-A1C9-E94F43142D43}.Release|Win32.ActiveCfg = Release|Win32
+		{E32EDFFD-8AAB-4BCF-A1C9-E94F43142D43}.Release|Win32.Build.0 = Release|Win32
+		{469FF306-CC5F-4F43-8951-C025D7653D3A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{469FF306-CC5F-4F43-8951-C025D7653D3A}.Debug|Win32.Build.0 = Debug|Win32
+		{469FF306-CC5F-4F43-8951-C025D7653D3A}.Release|Win32.ActiveCfg = Release|Win32
+		{469FF306-CC5F-4F43-8951-C025D7653D3A}.Release|Win32.Build.0 = Release|Win32
+		{DDDBAF15-4F75-481D-8381-28FB9C7AE12E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DDDBAF15-4F75-481D-8381-28FB9C7AE12E}.Debug|Win32.Build.0 = Debug|Win32
+		{DDDBAF15-4F75-481D-8381-28FB9C7AE12E}.Release|Win32.ActiveCfg = Release|Win32
+		{DDDBAF15-4F75-481D-8381-28FB9C7AE12E}.Release|Win32.Build.0 = Release|Win32
+		{37CAF235-3A93-454A-83E0-F0767FB763A1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{37CAF235-3A93-454A-83E0-F0767FB763A1}.Debug|Win32.Build.0 = Debug|Win32
+		{37CAF235-3A93-454A-83E0-F0767FB763A1}.Release|Win32.ActiveCfg = Release|Win32
+		{37CAF235-3A93-454A-83E0-F0767FB763A1}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

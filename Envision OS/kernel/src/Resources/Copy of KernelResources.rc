@@ -1,0 +1,24 @@
+201     BITMAP  boot_screen.bmp
+202     RCDATA  pallete.dat
+203     RCDATA  font.dat
+204     BITMAP  progress0.bmp
+205     BITMAP  progress1.bmp
+206     BITMAP  progress2.bmp
+
+401     RCDATA      //Boot Video Information Block
+{
+    201L,           //Background Resource
+    202L,           //Pallete Resource
+    203L,           //Font Resource
+    8L,             //Font Width
+    12L,            //Font Height
+    10L,            //Console X
+    10L,            //Console Y
+    152L,           //Progress X
+    410L,           //Progress Y
+    480L,           //Console Width
+    240L,           //Console Height
+    3L,             //Progress Count
+    10L,            //Progress Delay
+    204L,205L,206L  //Progress Resources
+}

@@ -1,0 +1,307 @@
+[List Info]!049
+OPCODE.LST-110738This is DOC 'bout undocument command and document command
+-966801OPCODE AAA   - ASCII adjust AX after addition
+-1820644OPCODE AAD    - ASCII adjust AX before Division
+-2517655OPCODE AAM    - ASCII adjust AX after Multiply
+-3225603OPCODE ADD4S  -  Addition for packed BCD strings
+-3895434ADDPS  - Packed Single-FP Add
+-4396328ADDSS  - Scalar Single-FP Add
+-4791274ANDNPS - Bit-wise Logical And Not For Single-FP
+-5132261ANDPS  - Bit-wise Logical And For Single-FP
+-54461215OPCODE BOUND   -  Chack Array Index Against Bounds
+-67141578OPCODE BRKCS  -  Break with Contex Switch
+-8345834OPCODE BRKEM  -  Break for Emulation
+-9232771OPCODE BRKN    -  Break to Native Mode
+-10056801OPCODE BRKS    -  Break to Security Mode
+-109101316OPCODE BRKXA   -  Break to Expansion Address
+-12279636OPCODE BSWAP  - Bytes Swap
+-12968532OPCODE BTCLR   -  Bit Test, If it True Clear and Branch
+-13553535OPCODE CALLN  - Call Native Mode Routine
+-14141718OPCODE CLEAR1  -  Clear one bit
+-14912919OPCODE CMOVcc -    Conditional Move
+-15884582OPCODE CMP4S  -  Compare for packed BCD strings
+-165331215CMPPS  - Packed Single FP-Compare
+-178151166CMPSS  - Scalar Single FP-Compare
+-19034639OPCODE CMPXCHG8B  - Compare and exchange 8 bytes
+-197261428OPCODE CMPXCHG - Compare and exchange
+-21221555COMISS - Scalar Ordered Single-FP Compare and Set EFLAGS
+-2182919438OPCODE CPUID - CPU Identification
+-41334348CVTPI2PS  - Packed Signed INT32 to Packed Single-FP Conversion
+-41749366CVTPS2PI  - Packed Single-FP to Packed INT32 Conversion
+-42182293CVTSI2SS  - Scalar Signed INT32 to Single-FP Conversion
+-42542323CVTSS2SI  - Scalae Single-FP to Signed INT32 Conversion
+-42932349CVTTPS2PI  - Packed Single-FP to Packed INT32 Conversion (Truncate)
+-43348405CVTTSS2SI  - Scalar Single-FP to Signed INT32 Conversion (Truncate)
+-43820364DIVPS  - Packed Single-FP Divide
+-44251258DIVSS  - Scalar Single-FP. Divide
+-445621191OPCODE EMMS -  Empty MMX State
+-458061068OPCODE ESC   - Escape Extrnal Cooprocessors
+-46927479OPCODE EXT  -  Extract Bit Field
+-474591052OPCODE F4X4 - FPU: Multiplicate vector on Matrix 4x4
+-48564811OPCODE FCMOVcc  -  Floating Point Conditional Move
+-49428879OPCODE FCOMI   -  Floating Point Compare setting Integer Flags
+-50356338OPCODE FEMMS - Faster Enter/Exit of MMX of F.P. state
+-50747402OPCODE FINT    -  Finished Interrupt
+-51202362OPCODE FNDISI - Disable NPX Interrupt
+-51617358OPCODE FNENI - Enable NPX Interrupt
+-52028614OPCODE FNSTDW - FPU Not wait Store Device Word register
+-52695713OPCODE FNSTSG - FPU Not wait Store Signature Word register
+-53461589OPCODE FPO2  - Floating Point Operations 2nd Way
+-54103642OPCODE FRICHOP - FPU: Round to Integer chop method
+-54798624OPCODE FRINEAR - FPU: Round to Integer Nearest method
+-55475875OPCODE FRINT2 - FPU: Round to Integer
+-56403372OPCODE FRSTPM - FPU Reset Protected Mode
+-56828528OPCODE FSBP0 - FPU: Set Bank pointer to Bank # 0
+-57409528OPCODE FSBP1 - FPU: Set Bank pointer to Bank # 1
+-57990528OPCODE FSBP2 - FPU: Set Bank pointer to Bank # 2
+-58571375OPCODE FSETPM - FPU Set Protected Mode Adressing
+-58999589OPCODE FXRSTOR -  Fast Restore F.P. Context
+-596411432OPCODE FXSAVE -  Fast Save F.P. Context
+-61126680OPCODE IBTS    -  Insert Bits String
+-61859619OPCODE ICEBP  - PWI Mode BreakPoint, ICE address space
+-62531993OPCODE ICEBP  -  In-Circuit Emulator Breakpoint
+-635772042OPCODE ICERET  - Return from PWI mode, ICE space
+-65672552OPCODE INS  -  Insert Bit String
+-66277531OPCODE INVD  - Invalidate Cache Buffer
+-66861636OPCODE INVLPG  - Invalidate Page Entry In TLB
+-67550676OPCODE JMPE  - Jump and change to 64-bit ISA.
+-68293655LDMXCSR  - Load Streaming SIMD Extension Control/Status
+-690012274OPCODE LOADALL - Load All Registers
+-713281483OPCODE LOADALL - Load All Registers From Table
+-72878590MASKMOVQ  - Byte Mask Write
+-73535464MAXPS  - Packed Single-FP Maximum
+-74066374MAXSS  - Scalar Single-FP Maximum
+-74507463MINPS  - Packed Single-FP Minimum
+-75037373MINSS  - Scalar Single-FP Manimum
+-75477435MOVAPS - Move Aligned Four Packed Single-FP
+-759651053OPCODE MOVD   -  Move Dwords
+-77085335MOVHLPS  - Move High to Low Packed Single-F.P.
+-77487481MOVHPS - Move High Packed Single FP.
+-78035335MOVLHPS  - Move Low to High Packed Single-F.P.
+-78437359MOVLPS - Move Low Packed Single FP.
+-78863356MOVMSKPS  - Move Mask to Integer
+-79286334MOVNTPS  - Move Aligned Four Packed Single-FP Non Temporal
+-79687332MOVNTQ - Move 64 bits non temporal
+-800721088OPCODE MOVQ   -  Move Qwords
+-81213503OPCODE MOVSPA  -  Move Stack Pointer After Bank Switched
+-81769636OPCODE MOVSPB  -  Move Stack Pointer Before Bamk Switching
+-82472346MOVSS  - Move Scalar Single-FP
+-82885334MOVUPS - Move Unaligned Four Packed Single-FP
+-83286361MULPS  - Packed Single-FP Multiply
+-83714256MULSS  - Scalar Single-FP Multiply
+-84023739OPCODE NOT1  - Invert a Specified bit
+-84814952OPCODE OIO  -  Official Undefined Opcode
+-85833264ORPS  - Bit-wise Logical OR For Single-FP
+-861501272OPCODE PACKSSDW   -  Pack with Signed Saturation dword to word
+-874751354OPCODE PACKSSWB   -  Pack with Signed Saturation word to Byte
+-888821435OPCODE PACKUSWB   -  Pack with Unsigned Saturation word to Byte
+-903701487OPCODE PADDB -  Packed Add Bytes
+-919101226OPCODE PADDD -  Packed Add Dwords
+-931891701OPCODE PADDSB -  Packed Add with Saturation Bytes
+-949391500OPCODE PADDSIW - Packed Add with Saturation, using Implied Destination
+-964921441OPCODE PADDSW -  Packed Add with Saturation Words
+-979861806OPCODE PADDUSB -  Packed Add Unsigned with Saturation Bytes
+-998451531OPCODE PADDUSW -  Packed Add Unsigned with Saturation Words
+-1014291314OPCODE PADDW -  Packed Add Words
+-102796920OPCODE PAND -  Bitwise Logical And
+-103769969OPCODE PANDN -  Bitwise Logical And Not
+-1047871464OPCODE PAVEB - Packed Average
+-106318511PAVGB  - Packed Average Byte
+-106878739OPCODE PAVGUSB - Avarage of Unsigned packed 8-bit Values
+-107684434PAVGW  - Packed Average Word
+-1081711693OPCODE PCMPEQB -  Packed Compare for Equal Bytes
+-1099171163OPCODE PCMPEQD -  Packed Compare for Equal Dwords
+-1111331340OPCODE PCMPEQW -  Packed Compare for Equal Words
+-1125261707OPCODE PCMPGTB -  Packed Compare for Greater Than Bytes
+-1142861177OPCODE PCMPGTD -  Packed Compare for Greater Than Dwords
+-1155161353OPCODE PCMPGTW -  Packed Compare for Greater Than Words
+-1169181904OPCODE PDISTIB - Packed Distance and Accumulate with Implied Register
+-118889372PEXTRW - Extract Word
+-119310581OPCODE PF2ID - Convert Packed F.P. to 32-bit Integer
+-119940606OPCODE PF2IW - Packed FP to Integer Word conversion with sign extend
+-120595333OPCODE PFACC - F.P. Accumulate
+-120977337OPCODE PFADD - Packed F.P. Addition
+-121363459OPCODE PFCMPEQ - Packed F.P. comparson, equal to
+-121871471OPCODE PFCMPGE - Packed F.P. comparison, greater or equal to
+-122391462OPCODE PFCMPGT - Packed F.P. compariason, greater  to
+-122902375OPCODE PFMAX - Packed F.P. Maximum
+-123326375OPCODE PFMIN - Packed F.P. Minimum
+-123750343OPCODE PFMUL - Packed F.P. Multiplication
+-124142380OPCODE PFNACC - Packed Floating Point negative accumulate
+-124571401OPCODE PFPNACC - Packed Floating Point Mixed Positive-Negative Accumulate
+-125021727OPCODE PFRCP - F.P. Reciprocal Approximation
+-125797418OPCODE PFRCPIT1 - Packed F.P. Reciprocal, first iteration Step
+-126264421OPCODE PFRCPIT2 - Packed F.P. Reciprocal, second iteration Step
+-126734455OPCODE PFRSQIT1 - Packed F.P. Reciprocal Square Root, 1st iteration step
+-127238415OPCODE PFRSQRT - F.P. Reciprocal Square Root Approximation
+-127702340OPCODE PFSUB - Packed F.P. Subtraction
+-128091351OPCODE PFSUBR - Packed F.P. Reverse Subtraction
+-128491343OPCODE PI2FD -  Packed 32-bit Integer to F.P. conversion
+-128883362OPCODE PI2FW - Packed 16-bit Integer to FP Conversion
+-129312542PINSRW - Insert Word
+-1299031517OPCODE PMACHRIW - Packed Multiply and Accumulate with Rounding
+-1314731292OPCODE PMADDWD -  Packed Multiply and Add Dwords
+-1328141427OPCODE PMAGW - Packed Magnitude
+-134308387PMAXSW - Packed Signed Integer Word Maximum
+-134762476PMAXUB - Packed Unsigned Integer Byte Maximum
+-135305387PMINSW - Packed Signed Integer Word Minimum
+-135759478PMINUB - Packed Unsigned Integer Byte Minimum
+-136304437PMOVMSKB  - Move Byte Mask to Integer
+-1367901444OPCODE PMULHRIW - Packed Multiply High with Rounding, result to Implied Register
+-1382831454OPCODE PMULHRW - Packed Multiply High with Rounding
+-139786552OPCODE PMULHRW - Multiply Signed Packed 16-bits with rounding and store to 16bit
+-140405520PMULHUW  -  Packed Multiply high unsignde word
+-1409781251OPCODE PMULHW -  Packed Multiply High by Words
+-1422821231OPCODE PMULLW -  Packed Multiply Low by Words
+-143562762OPCODE PMVGEZB - Packed Conditional Move
+-144373751OPCODE PMVLZB - Packed Conditional Move
+-145173759OPCODE PMVNZB - Packed Conditional Move
+-145981756OPCODE PMVZB - Packed Conditional Move
+-146790916OPCODE POR -  Bitwise Logical Or
+-147773677PREFETCHxx  - Prefetch
+-148499421OPCODE PREFETCH - Prefetch CPU cache line into L1 data cache
+-148969423OPCODE PREFETCHW - Prefetch CPU cache line into L1 data cache
+-149459512PSADBW - Packed Sum of Absolute Differenses
+-150038492PSHUFW - Packed Shuffle Word
+-1505831111OPCODE PSLLD -  Packed Shift Left Logical Dwords
+-1517471046OPCODE PSLLQ -  Packed Shift Left Logical Qwords
+-1528461191OPCODE PSLLW -  Packed Shift Left Logical Words
+-1540901144OPCODE PSRAD -  Packed Shift Right Arithmetic Dwords
+-1552871248OPCODE PSRAW -  Packed Shift Right Arithmetic Words
+-1565881113OPCODE PSRLD -  Packed Shift Right Logical Dwords
+-1577541048OPCODE PSRLQ -  Packed Shift Right Logical Qwords
+-1588551193OPCODE PSRLW -  Packed Shift Right Logical Words
+-1601011297OPCODE PSUBB -  Packed Subtract Bytes
+-1614511034OPCODE PSUBD -  Packed Subtract Dwords
+-1625381721OPCODE PSUBSB -  Packed Subtract with Saturation Bytes
+-164308623OPCODE PSUBSIW - Packed Subtract with Saturation, using Implied Destination
+-1649841447OPCODE PSUBSW -  Packed Subtract with Saturation Words
+-1664841667OPCODE PSUBUSB -  Packed Subtract Unsigned with Saturation Bytes
+-1682041383OPCODE PSUBUSW -  Packed Subtract Unsigned with Saturation Bytes
+-1696401121OPCODE PSUBW -  Packed Subtract Words
+-170810343OPCODE PSWAPD - Packed Swap Doubleword
+-1712061691OPCODE PUNPCKHBW -  Unpack High Bytes to Words
+-1729501387OPCODE PUNPCKHDQ -  Unpack High Dwords to Qwords
+-1743901560OPCODE PUNPCKHWD -  Unpack High Words to Dwords
+-1760031732OPCODE PUNPCKLBW -  Unpack Low Bytes to Words
+-1777881388OPCODE PUNPCKLDQ -  Unpack Low Dwords to Qwords
+-1792291561OPCODE PUNPCKLWD -  Unpack Low Words to Dwords
+-180843929OPCODE PXOR -  Bitwise Logical Exclusive OR
+-181839344RCPPS  - Packed Single-FP Reciprocal
+-182250264RCPSS  - Scalar Single-FP Reciprocal
+-182567517OPCODE RDMSR  - Read From Model Specified Register
+-183137888OPCODE RDPMC  - Read Perfomance Monitoring Counters
+-1840781854OPCODE RDSHR  - Read SMM Header Pointer Register
+-185985732OPCODE RDTSC  - Read From Time Stamp Counter
+-186770413OPCODE REPC  - Repeat While Carry Flag
+-187236420OPCODE REPNC  - Repeat While Not Carry Flag
+-1877092404OPCODE RES3  - Restore All  CPU Registers
+-1901662515OPCODE RES4  - Restore All  CPU Registers
+-192734388OPCODE RETRBI  -  Return from Register Bank Context
+-193175596OPCODE RETXA   -  Return from  Expansion Address
+-193824639OPCODE ROL4  - Rotate left  4 bits
+-194516642OPCODE ROR4  - Rotate right  4 bits
+-1952111087OPCODE RSDC  - Restore Register and Descriptor
+-196351918OPCODE RSLDT  - Restore LDTR and Descriptor
+-1973222951OPCODE RSM  - Resume from System Managment Mode
+-2003261952OPCODE RSM  - Resume from SMM
+-202345367RSQRTPS  - Packed Single-FP Square Root Reciprocal
+-202779288RSQRTSS  - Scalar Single-FP Square Root Reciprocal
+-203120890OPCODE RSTS  - Restore TR and Descriptor
+-204063705OPCODE SET1  - Set a Specified Bit
+-204821561OPCODE SETALC  - Set AL to Carry Flag
+-205449396SFENCE - Store Fence
+-205912310SHUFPS - Shuffle Single-FP
+-206275743OPCODE SMI  - System Managment Interrupt
+-207071570OPCODE SMINT - Software SMM Interrupt
+-207708344SQRTPS - Packed Single-FP Square Root
+-208119262SQRTSS - Scalar Single-FP Square Root
+-208448292STMXCSR  - Store Streaming SIMD Extension Control/Status
+-208793352OPCODE STOP    -  Stop CPU
+-209198638OPCODE SUB4S  -  Subtraction of packed BCD strings
+-209903340SUBPS  - Packed Single-FP Subtract
+-210310262SUBSS  - Scalar Single-FP Subtract
+-2106251003OPCODE SVDC  - Save Register and Descriptor
+-211681914OPCODE SVLDT  - Save LDTR and Descriptor
+-212648907OPCODE SVTS  - Save TR and Descriptor
+-213608772OPCODE SYSCALL - Call Operating System
+-2144331103OPCODE SYSENTER  - Call Operating System
+-215589874OPCODE SYSEXIT - Return from Operation System
+-216516729OPCODE SYSRET  - Return from Operation System
+-217298878OPCODE TEST1  -  Test a Specified bit
+-218229655OPCODE TSKSW  -   Task Switch
+-218951575UCOMISS  - Unordered Scalar Single-FP compare and Set EFLAGS
+-219593393UNPCKHPS  - Unpack High Packed Single-FP Data
+-220053392UNPCKLPS  - Unpack Low Packed Single-FP Data
+-220497930OPCODE UD  -  Undefined Instruction
+-221479941OPCODE UD2  -  Undefined Instruction
+-2224731377OPCODE UMOV  - Mov Data to Main (User) Memory
+-223903632OPCODE WBINVD  - Write Back and Invalidate Cache
+-224588503OPCODE WRMSR  - Write to Model Specified Register
+-225144372OPCODE WRSHR  - Write SMM Header Pointer Register
+-225569915OPCODE XADD  - Exchange and addition
+-226537944OPCODE XBTS    -  Extract  Bits String
+-227548269XORPS  - Bit-wise Logical XOR For Single-FP
+-2278722693APPENDIX A0
+-2306187128APPENDIX A1
+-2378013619APPENDIX A2
+-2414734166APPENDIX A3
+-2456925311APPENDIX A4
+-2510568737APPENDIX A5
+-2598466927APPENDIX A6
+-26682111395APPENDIX    B
+-2782621515APPENDIX C0
+-279825406APPENDIX C1
+-2802791607APPENDIX C2
+-2819361198APPENDIX D0
+-2831875135APPENDIX D1   INTEL 386/486SL REGISTERS
+-2883751020APPENDIX D2   NS486SXF REGISTERS
+-2894422026APPENDIX E
+-29153025755APPENDIX  F0 NON FP OPCODES
+-3173354280APPENDIX  F1  FLOATING POINT OPCODES
+-321677440APPENDIX  F2   CPUs AND INSTRUCTION SET
+-3221614957APPENDIX G
+-3271682295APPENDIX H
+-3295146220APPENDIX  I FORMAT OF DEBUG CONTROL REGISTERS (DR6/DR7)
+-3357851160APPENDIX  I FORMAT OF DEBUG DATA REGISTERS (except DR0-DR5)
+-3369967897APPENDIX  K    FORMAT  OF CACHE TEST REGISTER  (TR4/TR5/TR3)
+-344944818APPENDIX  L     FORMAT  OF BTB TEST REGISTER (TR1/TR2)
+-3458134068APPENDIX  K    FORMAT  OF TLB TEST REGISTER  (TR6/TR7)
+-3499353096APPENDIX  N   EFLAGS register format
+-3530843835APPENDIX  O OLD CONTROL REGISTERS FORMAT (CR0-CR3)
+-3569722530APPENDIX  P   CR4 register format
+-3595581615APPENDIX Q     TYPE OF INTEL'S SOCKETS
+-3612294195APPENDIX R    UNDEFINED FLAGS
+-3654771393APPENDIX  S   FLOATING POINT REGISTERS FORMATS
+-3669217692APPENDIX  T    FORMAT  OF  PAGE TABLES ENTRYES
+-3746646439APPENDIX U     FORMAT  OF  DESCRIPTORS
+-3811542169APPENDIX  V    FORMAT  OF  TSS
+-38337664APPENDIX W  - Model Specific Registers List
+-3835006989APPENDIX X - SYSTEM MANAGMENT MODE (SMM)
+-3905496100APPENDIX Y0  - Vendor Instruction Time for Intel 8088 CPU
+-3967095983APPENDIX Y1  - Vendor Instruction Time for Intel i80186 CPU
+-4027526048APPENDIX Y2  - Vendor Instruction Time for NEC V20 CPU
+-4088607698APPENDIX Y3  - Vendor Instruction Time for Intel i286 CPU
+-41661813900APPENDIX Y4  - Vendor Instruction Time for Intel i386DX CPU
+-43057814006APPENDIX Y5  - Vendor Instruction Time for Intel i486DX CPU
+-44464413838APPENDIX Y6  - Vendor Instruction Time for Cyrix Cx486DX CPU
+-45854213852APPENDIX Y7  - Vendor Instruction Time for Intel Pentium Processor
+-47245413062APPENDIX Y8  - Vendor Instruction Time for Cyrix Cx6x86 (M1) CPU
+-4855812043APPENDIX   Z0  - Execution time for  Intel 8087 FPU
+-4876892044APPENDIX   Z1  - Execution time for  Intel 80287 FPU
+-4897981924APPENDIX   Z2  - Execution time for  Intel 80387 FPU
+-4917871924APPENDIX   Z3  - Execution time for  Intel 387DX FPU
+-4937761923APPENDIX   Z4  - Execution time for  IIT   3C87 FPU
+-4957641924APPENDIX   Z5  - Execution time for  ULSI  83C87 FPU
+-4977531925APPENDIX   Z6  - Execution time for  ULSI  DX/DLC FPU
+-4997431924APPENDIX   Z7  - Execution time for  C&T   38700 FPU
+-5017321923APPENDIX   Z8  - Execution time for  Cyrix 387+ FPU
+-5037201924APPENDIX   Z9  - Execution time for  Cyrix 83D87 FPU
+-5057091927APPENDIX   Z10 - Execution time for  Intel RapidCAD FPU
+-5077011923APPENDIX   Z11 - Execution time for  Intel i486 FPU
+-5096891926APPENDIX   Z12 - Execution time for  Intel Pentium FPU
+-511674111831APPENDIX _A PENTIUM PRO/PENTIUM II RISC-CORE INSTRUCTIONS INFO & TIMES
+-62362366[Credits & Info]:
+-623749194Q&A:
+-62400493[2 All]
+-62415816Sorry, But EOF

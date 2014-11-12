@@ -1,0 +1,138 @@
+<html>
+<head>
+<title>Copyright comment Editor</title>
+<script language='javascript'>
+
+function TextInsert(_str, _pos, _txt)
+{
+    _out = "";
+    _out += _str.substr(0, _pos);
+    _out += _txt;
+    _out += _str.substr(_pos + _txt.length);
+    return _out;
+}
+
+function ExtractLine(_str, _ln, _w)
+{
+    if(_ln==0)
+    return _str.substr(0,_w);
+    else
+    return "";
+}
+
+function Compile()
+{
+    var _fc = "";
+    var _fn = "";
+    var _fv = "";
+    var _file = document.forms['_frm']._filename.value;
+    var _ver = "v " + document.forms['_frm']._version.value;
+    var _notes = document.forms['_frm']._notes.value;
+    var _cprt = "Copyright © " + document.forms['_frm']._cprt.value;
+    var _head = "";
+    var _foot = "";
+
+    _head += "////////////////////////////////////////////////////////////////////////////////" + "\n\r";
+    _head += "//----------------------------------------------------------------------------//" + "\n\r";
+    _head += "//                                                                            //" + "\n\r";
+    _head += "//                                                                            //" + "\n\r";
+    _head += "//                                                                            //" + "\n\r";
+    _head += "//                                                                            //" + "\n\r";
+    _head += "//                                                                            //" + "\n\r";
+    _head += "//                                                                            //" + "\n\r";
+    _head += "//                                                                            //" + "\n\r";
+    _head += "//                                                                            //" + "\n\r";
+    _head += "//                                                                            //" + "\n\r";
+    _head += "//                                                                            //" + "\n\r";
+    _head += "//----------------------------------Notes-------------------------------------//" + "\n\r";
+    _head += "//                                                                            //" + "\n\r";
+    _head += "//                                                                            //" + "\n\r";
+    _head += "//                                                                            //" + "\n\r";
+    _head += "//                                                                            //" + "\n\r";
+    _head += "//                                                                            //" + "\n\r";
+    _head += "//                                                                            //" + "\n\r";
+    _head += "////////////////////////////////////////////////////////////////////////////////" + "\n\r";
+
+    _foot += "////////////////////////////////////////////////////////////////////////////////" + "\n\r";
+    _foot += "//----------------------------------------------------------------------------//" + "\n\r";
+    _foot += "//----------------------------------------------------------------------------//" + "\n\r";
+    _foot += "////////////////////////////////////////////////////////////////////////////////" + "\n\r";
+
+    _head = TextInsert(_head, (82*1) + 40 - (_file.length/2), _file);
+    _head = TextInsert(_head, (82*2) + 40 - (_ver.length/2), _ver);
+    for(var i=0;i < 9;i++)
+    {
+         _fc = document.forms['_frm']['_fc' + i].checked;
+         _fn = document.forms['_frm']['_fn' + i].value;
+         _fv = document.forms['_frm']['_fv' + i].value;
+         if(_fc)
+         {
+             _head = TextInsert(_head, 82 * (3 + i) + 3, _fn + ' ' + _fv);
+         }
+    }
+    _head = TextInsert(_head, (82*13) + 3, ExtractLine(_notes, 0, 74));
+    _head = TextInsert(_head, (82*14) + 3, ExtractLine(_notes, 1, 74));
+    _head = TextInsert(_head, (82*15) + 3, ExtractLine(_notes, 2, 74));
+    _head = TextInsert(_head, (82*16) + 3, ExtractLine(_notes, 3, 74));
+    _head = TextInsert(_head, (82*17) + 3, ExtractLine(_notes, 4, 74));
+    _head = TextInsert(_head, (82*18) + 3, ExtractLine(_notes, 5, 74));
+
+    _foot = TextInsert(_foot, (82*1) + 40 - (_file.length/2), _file);
+    _foot = TextInsert(_foot, (82*2) + 40 - (_cprt.length/2), _cprt);
+
+    document.forms['_frm']._head.value = _head;
+    document.forms['_frm']._foot.value = _foot;
+}
+
+function Setup()
+{
+    var d = new Date();
+    document.forms['_frm']._version.value = '1.0';
+    document.forms['_frm']._cprt.value = 'Sidhant Goel, ' + d.getYear();;
+    document.forms['_frm']._fc6.checked = true;
+    document.forms['_frm']._fn6.value = 'Author:';
+    document.forms['_frm']._fv6.value = 'Sidhant Goel';
+    document.forms['_frm']._fc7.checked = true;
+    document.forms['_frm']._fn7.value = 'Date Created:';
+    document.forms['_frm']._fv7.value = d.toLocaleDateString();
+}
+
+</script>
+</head>
+<body onload='Setup()'>
+<form name='_frm'>
+<table>
+<tr><td></td><td>Filename:</td><td><input name='_filename' type='text'></td></tr>
+<tr><td></td><td>Version:</td><td><input name='_version' type='text'></td></tr>
+<tr><td></td><td>Copyright:</td><td><input name='_cprt' type='text'></td></tr>
+<tr><td><input type='checkbox' name='_fc0'></td><td><input type='text' name='_fn0'></td><td><input type='text' name='_fv0'></td></tr>
+<tr><td><input type='checkbox' name='_fc1'></td><td><input type='text' name='_fn1'></td><td><input type='text' name='_fv1'></td></tr>
+<tr><td><input type='checkbox' name='_fc2'></td><td><input type='text' name='_fn2'></td><td><input type='text' name='_fv2'></td></tr>
+<tr><td><input type='checkbox' name='_fc3'></td><td><input type='text' name='_fn3'></td><td><input type='text' name='_fv3'></td></tr>
+<tr><td><input type='checkbox' name='_fc4'></td><td><input type='text' name='_fn4'></td><td><input type='text' name='_fv4'></td></tr>
+<tr><td><input type='checkbox' name='_fc5'></td><td><input type='text' name='_fn5'></td><td><input type='text' name='_fv5'></td></tr>
+<tr><td><input type='checkbox' name='_fc6'></td><td><input type='text' name='_fn6'></td><td><input type='text' name='_fv6'></td></tr>
+<tr><td><input type='checkbox' name='_fc7'></td><td><input type='text' name='_fn7'></td><td><input type='text' name='_fv7'></td></tr>
+<tr><td><input type='checkbox' name='_fc8'></td><td><input type='text' name='_fn8'></td><td><input type='text' name='_fv8'></td></tr>
+<tr><td colspan='3'>Notes:<br><textarea name='_notes' rows=6 cols=75></textarea></td></tr>
+<tr><td colspan='3'><button name='_compile' onclick='Compile()'>Compile</button></td></tr>
+</table>
+<hr>
+Header:<br>
+<textarea name='_head' rows=20 cols=90></textarea><br>
+Footer:<br>
+<textarea name='_foot' rows=4 cols=90></textarea>
+</form>
+<script language='javascript'>
+
+   /* document.forms['_frm']._ver.value = '1.0';
+    document.forms['_frm']._cprt.value = 'Sidhant Goel, 2007';
+    document.forms['_frm']._fc6.checked = true;
+    document.forms['_frm']._fn6.value = 'Author:';
+    document.forms['_frm']._fv6.value = 'Sidhant Goel';
+    document.forms['_frm']._fc7.checked = true;
+    document.forms['_frm']._fn7.value = 'Date Created:';*/
+    //document.forms['_frm']._fv7.value = (new Date()).toDateString();
+</script>
+</body>
+</html>
